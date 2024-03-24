@@ -32,9 +32,9 @@ private slots:
 
     void on_pbSend_clicked();
 
-    void on_TCPcheck_stateChanged(int arg1);
+    void on_TCPcheck_stateChanged(int state);
 
-    void on_SSLcheck_stateChanged(int arg1);
+    void on_SSLcheck_stateChanged(int state);
 
     void on_pbClear_clicked();
 
