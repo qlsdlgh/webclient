@@ -10,7 +10,7 @@ Widget::Widget(QWidget *parent)
     //socket_.connected();
     //socket_.readyRead();
     connect(ui->TCPcheck, &QCheckBox::stateChanged,this, &Widget::on_TCPcheck_stateChanged);
-    connect(ui->TCPcheck, &QCheckBox::stateChanged,this, &Widget::on_TCPcheck_stateChanged);
+    connect(ui->SSLcheck, &QCheckBox::stateChanged,this, &Widget::on_SSLcheck_stateChanged);
 
     QObject::connect(&ssocket_,&QAbstractSocket::connected,this,&Widget::doConnected);
     QObject::connect(&ssocket_,&QAbstractSocket::disconnected,this,&Widget::doDisconnected);
